@@ -7,18 +7,74 @@
 //
 
 import UIKit
+import BlockInputView
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var cardNumberInput: BlockInputView!
+    @IBOutlet weak var pinInput: BlockInputView!
+    @IBOutlet weak var otpInput: BlockInputView!
+    @IBOutlet weak var macAddressInput: BlockInputView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        cardNumberInput.delegate = self
+        cardNumberInput.activate()
+        
+        var widgetProperPIN = WidgetAppearance()
+        widgetProperPIN.minNumberOfSections = 4
+        widgetProperPIN.sectionWidth = 1
+        widgetProperPIN.emptyMessage = "Please enter valid pin"
+        widgetProperPIN.errorMessage = "Invalid pin"
+        widgetProperPIN.minLength = 1
+        widgetProperPIN.maxLength = 4
+        widgetProperPIN.hintText = "0"
+        
+        pinInput.delegate = self
+        pinInput.activate(widgetAppearance: widgetProperPIN)
+        
+        var widgetProperOTP = WidgetAppearance()
+        widgetProperOTP.minNumberOfSections = 8
+        widgetProperOTP.sectionWidth = 1
+        widgetProperOTP.emptyMessage = "Please enter valid OTP"
+        widgetProperOTP.errorMessage = "Invalid Code"
+        widgetProperOTP.minLength = 1
+        widgetProperOTP.maxLength = 8
+        widgetProperOTP.hintText = "0"
+        
+        otpInput.delegate = self
+        otpInput.activate(widgetAppearance: widgetProperOTP)
+        
+        var widgetProperMAC = WidgetAppearance()
+        widgetProperMAC.minNumberOfSections = 6
+        widgetProperMAC.sectionWidth = 2
+        widgetProperMAC.errorMessage = "Please enter valid OTP"
+        widgetProperMAC.emptyMessage = "Invalid mac address"
+        widgetProperMAC.minLength = 1
+        widgetProperMAC.maxLength = 12
+        widgetProperMAC.hintText = "00"
+        widgetProperMAC.keyboardType = .default
+        
+        macAddressInput.delegate = self
+        macAddressInput.activate(widgetAppearance: widgetProperMAC)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func actForNext(_ sender: UIButton) {
+        if cardNumberInput.validate() {
+            let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyBoard.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
+            vc.number = cardNumberInput.getFieldText()
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
-
+    
+    
 }
 
+extension ViewController: BlockInputViewDelegate {
+    func actionForInfoButton(widget: BlockInputView) {
+        print("tapped")
+    }
+    
+    
+}

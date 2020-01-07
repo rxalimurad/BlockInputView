@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		25782BE79F50A4013A8AD3A555048462 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		0CC10C9D06F9D4AA8B44F843E783E6BE /* BlockInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD48ED10DC9E048D35B40F218CCC057 /* BlockInputView.swift */; };
+		25782BE79F50A4013A8AD3A555048462 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
 		32C015A59FCCF16B47F70C3381626D37 /* Pods-BlockInputView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E471E476E0418BAED4C5C8F863BCDD5 /* Pods-BlockInputView_Tests-dummy.m */; };
+		402904731037389A7B2EE5862FF0F845 /* BlockInputView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6711D4D2944AEAEC1FC8F955EE720B7A /* BlockInputView-dummy.m */; };
+		4AA25EFEDCF81F06201F72C519BDE32D /* BlockInputView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 623BA945A28664F13A7172B393190DC3 /* BlockInputView.bundle */; };
 		79E8792A574F015E6AFCA67B2A54D5B8 /* Pods-BlockInputView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA95822009CBC194C1D375F0D671FA /* Pods-BlockInputView_Example-dummy.m */; };
-		80A231BE4AB45B622222D47B88ED4D67 /* BlockInputView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6316B0C262AE410EA72F2B73C0EBEBC5 /* BlockInputView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D2A71B34E7DC792453AEDD71693EA062 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		7DF25F6B168A7562BDDF9719190F423B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		C4A807184E87722046D0915B0DDF5FBF /* WidgetAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA0067CA8772F3AFE9FCA3AD16EB7DE /* WidgetAppearance.swift */; };
+		C4CCD511ED2E8791B29EA23AB4BC2FAB /* BlockInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D4CFE0A61A40D8DDAC710FECB4707AA /* BlockInputView.xib */; };
+		D48D9B987F641AC6AD732BE003F82143 /* BlockInputView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EA5397CEC7776077DDF944F018E136D /* BlockInputView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E6AA16C1F3CDB829F1434406196AD533 /* Pods-BlockInputView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CFAFEE6262EF1A5402C7FE5DB948D1D /* Pods-BlockInputView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E940869440251E8627E284BBC7549687 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
 		EC587F4975F6E2F9151C9EC7BEA54AD3 /* Pods-BlockInputView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E5CD5DD5DFFDE3E520E3C034B8B7576 /* Pods-BlockInputView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F54503042BBF029BF527A1EC06FB5A5D /* BlockInputView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D5B1F3FEBEA02E9787A21C8A341BAE /* BlockInputView-dummy.m */; };
-		FE2229264CDF8953D6AA331C88CAF9AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		FE2229264CDF8953D6AA331C88CAF9AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,43 +38,72 @@
 			remoteGlobalIDString = FB30F800D62B572F4B2532A914EECB3C;
 			remoteInfo = "Pods-BlockInputView_Example";
 		};
+		7297875E0E86C8A6DE1C60C324664649 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E974C49AEF240C099C46566E379F87D;
+			remoteInfo = "BlockInputView-BlockInputView";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0755CB5FAE72463035C8DD17996770AD /* Pods-BlockInputView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BlockInputView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		0857078B23A0785A019F517388BBC10A /* Pods-BlockInputView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BlockInputView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		21E6ADC9E451A0D875FD645E952C2942 /* Pods_BlockInputView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlockInputView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E770EC141D3C4C0DFCA82792110EF5B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		0EA5397CEC7776077DDF944F018E136D /* BlockInputView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BlockInputView-umbrella.h"; sourceTree = "<group>"; };
+		21E6ADC9E451A0D875FD645E952C2942 /* Pods_BlockInputView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BlockInputView_Tests.framework; path = "Pods-BlockInputView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		283F1D1CC6D9529DA898D7402ADC6461 /* Pods-BlockInputView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlockInputView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		2B2BB61280A22021A880F7973C1C5368 /* Pods-BlockInputView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BlockInputView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		2CD48ED10DC9E048D35B40F218CCC057 /* BlockInputView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockInputView.swift; path = BlockInputView/Source/BlockInputView.swift; sourceTree = "<group>"; };
+		30F61B260F668AC2C0ADCC54DF689760 /* ResourceBundle-BlockInputView-BlockInputView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-BlockInputView-BlockInputView-Info.plist"; sourceTree = "<group>"; };
+		312B988EF117AE4DE76A268D970131FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		33ED23F828183FF179A38671A5D6CDD1 /* Pods-BlockInputView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BlockInputView_Example.modulemap"; sourceTree = "<group>"; };
 		36ADB3DC41DCA27134BA260EE518587A /* Pods-BlockInputView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlockInputView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		3E471E476E0418BAED4C5C8F863BCDD5 /* Pods-BlockInputView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BlockInputView_Tests-dummy.m"; sourceTree = "<group>"; };
 		433045863E6B4C9A78825100A90BB114 /* Pods-BlockInputView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BlockInputView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		442A7DFACF0DC924279E48472DDA2425 /* BlockInputView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BlockInputView.xcconfig; sourceTree = "<group>"; };
 		4977B00DD7FDBA944D14666AC24628C3 /* Pods-BlockInputView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BlockInputView_Example-frameworks.sh"; sourceTree = "<group>"; };
+		4D4CFE0A61A40D8DDAC710FECB4707AA /* BlockInputView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = BlockInputView.xib; path = BlockInputView/Assets/BlockInputView.xib; sourceTree = "<group>"; };
+		4DA0067CA8772F3AFE9FCA3AD16EB7DE /* WidgetAppearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WidgetAppearance.swift; path = BlockInputView/Source/WidgetAppearance.swift; sourceTree = "<group>"; };
 		4EBA95822009CBC194C1D375F0D671FA /* Pods-BlockInputView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BlockInputView_Example-dummy.m"; sourceTree = "<group>"; };
-		6316B0C262AE410EA72F2B73C0EBEBC5 /* BlockInputView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BlockInputView-umbrella.h"; sourceTree = "<group>"; };
-		6F84770FDDF5E1467A149A0BCE39CD91 /* BlockInputView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BlockInputView-Info.plist"; sourceTree = "<group>"; };
-		72C37CFFBCCE5B20749DBBA6A367FFAE /* BlockInputView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BlockInputView.xcconfig; sourceTree = "<group>"; };
-		8C2B436AB3A6B53A4BB383F6A1519C01 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		623BA945A28664F13A7172B393190DC3 /* BlockInputView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = BlockInputView.bundle; path = "BlockInputView-BlockInputView.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6711D4D2944AEAEC1FC8F955EE720B7A /* BlockInputView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BlockInputView-dummy.m"; sourceTree = "<group>"; };
+		67AF73198B44CA8F3210F6EF16992DD3 /* BlockInputView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BlockInputView-Info.plist"; sourceTree = "<group>"; };
+		70BB4477475D6946457110182E50C9A6 /* BlockInputView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = BlockInputView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		8C78F2B75F16099800649AE034D149AB /* Pods-BlockInputView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BlockInputView_Tests.modulemap"; sourceTree = "<group>"; };
 		8E5CD5DD5DFFDE3E520E3C034B8B7576 /* Pods-BlockInputView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BlockInputView_Tests-umbrella.h"; sourceTree = "<group>"; };
-		90D5B1F3FEBEA02E9787A21C8A341BAE /* BlockInputView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BlockInputView-dummy.m"; sourceTree = "<group>"; };
 		9CFAFEE6262EF1A5402C7FE5DB948D1D /* Pods-BlockInputView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BlockInputView_Example-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B1DF40B4D6C7D0ECBA8E98257C01D69C /* BlockInputView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BlockInputView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		ADE1C4E0F73C2768F835F03F723BAE56 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		B1DF40B4D6C7D0ECBA8E98257C01D69C /* BlockInputView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BlockInputView.framework; path = BlockInputView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5654BB1297F138EEEDA9BF22E5DE162 /* BlockInputView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BlockInputView.modulemap; sourceTree = "<group>"; };
+		BAB62C9CDD1FD908C9D1C2734106A4F3 /* BlockInputView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BlockInputView-prefix.pch"; sourceTree = "<group>"; };
 		C7C1624F2B389F41B97CD535EAEE16AD /* Pods-BlockInputView_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BlockInputView_Example-Info.plist"; sourceTree = "<group>"; };
 		C8BDA6BE13DE2B655DAB88C299093280 /* Pods-BlockInputView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlockInputView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		D1D4698F5546736A11886E5D20860443 /* BlockInputView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BlockInputView-prefix.pch"; sourceTree = "<group>"; };
-		DEDD457AA6430482249D837A9715F965 /* BlockInputView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = BlockInputView.podspec; sourceTree = "<group>"; tabWidth = 2; };
-		DEE7004032662F85130EFDE01E5EE6AF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		E2F6C87BEB519B64BD700736F2E51FAC /* Pods_BlockInputView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlockInputView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2F6C87BEB519B64BD700736F2E51FAC /* Pods_BlockInputView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BlockInputView_Example.framework; path = "Pods-BlockInputView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E440B5C46E54F086A1EFD75321FA4B11 /* Pods-BlockInputView_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BlockInputView_Tests-Info.plist"; sourceTree = "<group>"; };
 		EE497F6D1A83A52E493680F293ECC799 /* Pods-BlockInputView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlockInputView_Example.release.xcconfig"; sourceTree = "<group>"; };
-		F50A6DD6FA3877D98114707C323253D1 /* BlockInputView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BlockInputView.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1E0306F8D3B8492842225065E9F1EE98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DF25F6B168A7562BDDF9719190F423B /* Foundation.framework in Frameworks */,
+				E940869440251E8627E284BBC7549687 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		317CE725D08675DAC6E989DCF53D6BFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		52CED3CB79A566D04B25CF8F305E596C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -86,17 +120,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8BD9B93BFD9DDB67EB0895B9B58CBF4D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D2A71B34E7DC792453AEDD71693EA062 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2983683FD097A93297E2F5D4E382B36 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18C2DD76C46F9EEBF3C0921B69DF6F84 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B5654BB1297F138EEEDA9BF22E5DE162 /* BlockInputView.modulemap */,
+				442A7DFACF0DC924279E48472DDA2425 /* BlockInputView.xcconfig */,
+				6711D4D2944AEAEC1FC8F955EE720B7A /* BlockInputView-dummy.m */,
+				67AF73198B44CA8F3210F6EF16992DD3 /* BlockInputView-Info.plist */,
+				BAB62C9CDD1FD908C9D1C2734106A4F3 /* BlockInputView-prefix.pch */,
+				0EA5397CEC7776077DDF944F018E136D /* BlockInputView-umbrella.h */,
+				30F61B260F668AC2C0ADCC54DF689760 /* ResourceBundle-BlockInputView-BlockInputView-Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/BlockInputView";
+			sourceTree = "<group>";
+		};
 		40478B17E9A669BEC80089E8263A01B2 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -106,12 +155,23 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		7F50CEBBA9AC73D6BE56934CCE3E5DD9 /* Development Pods */ = {
+		7B036FD89AFAB2E1B433FC45890AB7BC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C6E322B53D0013473C8E7FC0AFC683B6 /* BlockInputView */,
+				623BA945A28664F13A7172B393190DC3 /* BlockInputView.bundle */,
+				B1DF40B4D6C7D0ECBA8E98257C01D69C /* BlockInputView.framework */,
+				E2F6C87BEB519B64BD700736F2E51FAC /* Pods_BlockInputView_Example.framework */,
+				21E6ADC9E451A0D875FD645E952C2942 /* Pods_BlockInputView_Tests.framework */,
 			);
-			name = "Development Pods";
+			name = Products;
+			sourceTree = "<group>";
+		};
+		97EB150204BFB235006B9A7F995D8904 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4D4CFE0A61A40D8DDAC710FECB4707AA /* BlockInputView.xib */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		986BE6234ADD85776F68789FDB529733 /* Pods-BlockInputView_Example */ = {
@@ -131,75 +191,33 @@
 			path = "Target Support Files/Pods-BlockInputView_Example";
 			sourceTree = "<group>";
 		};
-		A3390D9E254C714CCD1F69CD511D42E6 /* Products */ = {
+		BB626B080C0B8D303B883098C70C7091 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B1DF40B4D6C7D0ECBA8E98257C01D69C /* BlockInputView.framework */,
-				E2F6C87BEB519B64BD700736F2E51FAC /* Pods_BlockInputView_Example.framework */,
-				21E6ADC9E451A0D875FD645E952C2942 /* Pods_BlockInputView_Tests.framework */,
+				F2E11315E8550682EEBF3C5B8340074D /* BlockInputView */,
 			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		A4377D8771F1112CB6DEF9515A34992C /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				F50A6DD6FA3877D98114707C323253D1 /* BlockInputView.modulemap */,
-				72C37CFFBCCE5B20749DBBA6A367FFAE /* BlockInputView.xcconfig */,
-				90D5B1F3FEBEA02E9787A21C8A341BAE /* BlockInputView-dummy.m */,
-				6F84770FDDF5E1467A149A0BCE39CD91 /* BlockInputView-Info.plist */,
-				D1D4698F5546736A11886E5D20860443 /* BlockInputView-prefix.pch */,
-				6316B0C262AE410EA72F2B73C0EBEBC5 /* BlockInputView-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/BlockInputView";
-			sourceTree = "<group>";
-		};
-		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		C6E322B53D0013473C8E7FC0AFC683B6 /* BlockInputView */ = {
-			isa = PBXGroup;
-			children = (
-				D0502BB7C7D21B1C3035C463A0CEB94A /* Pod */,
-				A4377D8771F1112CB6DEF9515A34992C /* Support Files */,
-			);
-			name = BlockInputView;
-			path = ../..;
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				7F50CEBBA9AC73D6BE56934CCE3E5DD9 /* Development Pods */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				A3390D9E254C714CCD1F69CD511D42E6 /* Products */,
+				BB626B080C0B8D303B883098C70C7091 /* Development Pods */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				7B036FD89AFAB2E1B433FC45890AB7BC /* Products */,
 				40478B17E9A669BEC80089E8263A01B2 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D0502BB7C7D21B1C3035C463A0CEB94A /* Pod */ = {
+		D5A4E63445E0FCBDEC94204481D9C9D8 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				DEDD457AA6430482249D837A9715F965 /* BlockInputView.podspec */,
-				8C2B436AB3A6B53A4BB383F6A1519C01 /* LICENSE */,
-				DEE7004032662F85130EFDE01E5EE6AF /* README.md */,
+				70BB4477475D6946457110182E50C9A6 /* BlockInputView.podspec */,
+				ADE1C4E0F73C2768F835F03F723BAE56 /* LICENSE */,
+				0E770EC141D3C4C0DFCA82792110EF5B /* README.md */,
 			);
 			name = Pod;
-			sourceTree = "<group>";
-		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		DB7A71142C2EC173EBBAEA4C625C570B /* Pods-BlockInputView_Tests */ = {
@@ -218,22 +236,44 @@
 			path = "Target Support Files/Pods-BlockInputView_Tests";
 			sourceTree = "<group>";
 		};
+		E2983683FD097A93297E2F5D4E382B36 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */,
+				312B988EF117AE4DE76A268D970131FE /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F2E11315E8550682EEBF3C5B8340074D /* BlockInputView */ = {
+			isa = PBXGroup;
+			children = (
+				2CD48ED10DC9E048D35B40F218CCC057 /* BlockInputView.swift */,
+				4DA0067CA8772F3AFE9FCA3AD16EB7DE /* WidgetAppearance.swift */,
+				D5A4E63445E0FCBDEC94204481D9C9D8 /* Pod */,
+				97EB150204BFB235006B9A7F995D8904 /* Resources */,
+				18C2DD76C46F9EEBF3C0921B69DF6F84 /* Support Files */,
+			);
+			name = BlockInputView;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		3ADB6CF0F531198E411D903A66A781AF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D48D9B987F641AC6AD732BE003F82143 /* BlockInputView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		932A6E62F2C3992CA3BC232FB18CD4E0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E6AA16C1F3CDB829F1434406196AD533 /* Pods-BlockInputView_Example-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CCB665FDF1F037E04D2D2DAD72BB8E13 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				80A231BE4AB45B622222D47B88ED4D67 /* BlockInputView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +288,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		3E974C49AEF240C099C46566E379F87D /* BlockInputView-BlockInputView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B43F387D261D1FAAFA2923C2C71C009 /* Build configuration list for PBXNativeTarget "BlockInputView-BlockInputView" */;
+			buildPhases = (
+				80AF899A095E06E3213FCD2FA4EF724C /* Sources */,
+				317CE725D08675DAC6E989DCF53D6BFB /* Frameworks */,
+				2CDD9AB09D9A608AC90F4FFC5E855B7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BlockInputView-BlockInputView";
+			productName = "BlockInputView-BlockInputView";
+			productReference = 623BA945A28664F13A7172B393190DC3 /* BlockInputView.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		7BCE59E002EE8035D026DE2D3A84AE6D /* Pods-BlockInputView_Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 28E5E0C09DA97A8095912A554EE56537 /* Build configuration list for PBXNativeTarget "Pods-BlockInputView_Tests" */;
@@ -269,16 +326,17 @@
 		};
 		7F2B2C036BD2299251011F02CD160EE1 /* BlockInputView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0F06A4886DB7EA83F2D8789BAA85EF15 /* Build configuration list for PBXNativeTarget "BlockInputView" */;
+			buildConfigurationList = 42A80DDE114D14948F19CDF3F72BB9A3 /* Build configuration list for PBXNativeTarget "BlockInputView" */;
 			buildPhases = (
-				CCB665FDF1F037E04D2D2DAD72BB8E13 /* Headers */,
-				028BBC72EF875E6E69DD41FAC7CD022C /* Sources */,
-				8BD9B93BFD9DDB67EB0895B9B58CBF4D /* Frameworks */,
-				D1F1D7408414B6EF233137AFF31A0842 /* Resources */,
+				3ADB6CF0F531198E411D903A66A781AF /* Headers */,
+				615823FBA62D59BC4D7E717C79B65DC0 /* Sources */,
+				1E0306F8D3B8492842225065E9F1EE98 /* Frameworks */,
+				E9244DD507B005AE806E5803B204ABDA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7C9D91AC2B96ED98F5F9746733951604 /* PBXTargetDependency */,
 			);
 			name = BlockInputView;
 			productName = BlockInputView;
@@ -322,11 +380,12 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = A3390D9E254C714CCD1F69CD511D42E6 /* Products */;
+			productRefGroup = 7B036FD89AFAB2E1B433FC45890AB7BC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				7F2B2C036BD2299251011F02CD160EE1 /* BlockInputView */,
+				3E974C49AEF240C099C46566E379F87D /* BlockInputView-BlockInputView */,
 				FB30F800D62B572F4B2532A914EECB3C /* Pods-BlockInputView_Example */,
 				7BCE59E002EE8035D026DE2D3A84AE6D /* Pods-BlockInputView_Tests */,
 			);
@@ -341,6 +400,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2CDD9AB09D9A608AC90F4FFC5E855B7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4CCD511ED2E8791B29EA23AB4BC2FAB /* BlockInputView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CC7D959F14A19909A343189BF8E08AE7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -348,24 +415,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D1F1D7408414B6EF233137AFF31A0842 /* Resources */ = {
+		E9244DD507B005AE806E5803B204ABDA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AA25EFEDCF81F06201F72C519BDE32D /* BlockInputView.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		028BBC72EF875E6E69DD41FAC7CD022C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F54503042BBF029BF527A1EC06FB5A5D /* BlockInputView-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		22AD8E8FF1F16188122B055E0A99DBFA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -374,11 +434,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		615823FBA62D59BC4D7E717C79B65DC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				402904731037389A7B2EE5862FF0F845 /* BlockInputView-dummy.m in Sources */,
+				0CC10C9D06F9D4AA8B44F843E783E6BE /* BlockInputView.swift in Sources */,
+				C4A807184E87722046D0915B0DDF5FBF /* WidgetAppearance.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7DC00CEA949BDD1C058055A2CC24F4D8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				32C015A59FCCF16B47F70C3381626D37 /* Pods-BlockInputView_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80AF899A095E06E3213FCD2FA4EF724C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +473,12 @@
 			name = BlockInputView;
 			target = 7F2B2C036BD2299251011F02CD160EE1 /* BlockInputView */;
 			targetProxy = 23A6519A9CA67F967B4D4BFAA7F22576 /* PBXContainerItemProxy */;
+		};
+		7C9D91AC2B96ED98F5F9746733951604 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "BlockInputView-BlockInputView";
+			target = 3E974C49AEF240C099C46566E379F87D /* BlockInputView-BlockInputView */;
+			targetProxy = 7297875E0E86C8A6DE1C60C324664649 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -467,37 +550,22 @@
 			};
 			name = Release;
 		};
-		52A9A4E4C3D50AFCCE1B4DB595C1E1C2 /* Release */ = {
+		751DF801EBDBD8EFCEDDB0A456F5A74A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72C37CFFBCCE5B20749DBBA6A367FFAE /* BlockInputView.xcconfig */;
+			baseConfigurationReference = 442A7DFACF0DC924279E48472DDA2425 /* BlockInputView.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/BlockInputView/BlockInputView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BlockInputView/BlockInputView-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/BlockInputView/BlockInputView.modulemap";
-				PRODUCT_MODULE_NAME = BlockInputView;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/BlockInputView";
+				IBSC_MODULE = BlockInputView;
+				INFOPLIST_FILE = "Target Support Files/BlockInputView/ResourceBundle-BlockInputView-BlockInputView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				PRODUCT_NAME = BlockInputView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				WRAPPER_EXTENSION = bundle;
 			};
-			name = Release;
+			name = Debug;
 		};
 		794988F07F71DC754139A66A2C7FD84F /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -532,9 +600,9 @@
 			};
 			name = Debug;
 		};
-		94BD962E798F6F35396DB9AA93E4ED0E /* Debug */ = {
+		A26028A32DF2C2C19BFC6CA6CA422DED /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72C37CFFBCCE5B20749DBBA6A367FFAE /* BlockInputView.xcconfig */;
+			baseConfigurationReference = 442A7DFACF0DC924279E48472DDA2425 /* BlockInputView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -548,7 +616,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/BlockInputView/BlockInputView-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/BlockInputView/BlockInputView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/BlockInputView/BlockInputView.modulemap";
 				PRODUCT_MODULE_NAME = BlockInputView;
@@ -556,12 +624,13 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		B0087CB4594321EF41619F3181FE120E /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -616,7 +685,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -686,6 +756,54 @@
 			};
 			name = Debug;
 		};
+		CC07A0EEAFFF3A459FE561A4E25C1C71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 442A7DFACF0DC924279E48472DDA2425 /* BlockInputView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/BlockInputView";
+				IBSC_MODULE = BlockInputView;
+				INFOPLIST_FILE = "Target Support Files/BlockInputView/ResourceBundle-BlockInputView-BlockInputView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = BlockInputView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		EAEA1A8B3692E75D56BCD7874F0A80B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 442A7DFACF0DC924279E48472DDA2425 /* BlockInputView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BlockInputView/BlockInputView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BlockInputView/BlockInputView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BlockInputView/BlockInputView.modulemap";
+				PRODUCT_MODULE_NAME = BlockInputView;
+				PRODUCT_NAME = BlockInputView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		FDDACC14A8C28B6FE6C146F87924A8A8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EE497F6D1A83A52E493680F293ECC799 /* Pods-BlockInputView_Example.release.xcconfig */;
@@ -723,20 +841,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0F06A4886DB7EA83F2D8789BAA85EF15 /* Build configuration list for PBXNativeTarget "BlockInputView" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				94BD962E798F6F35396DB9AA93E4ED0E /* Debug */,
-				52A9A4E4C3D50AFCCE1B4DB595C1E1C2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		28E5E0C09DA97A8095912A554EE56537 /* Build configuration list for PBXNativeTarget "Pods-BlockInputView_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				794988F07F71DC754139A66A2C7FD84F /* Debug */,
 				31F73847BF0BC4B63ADDEDA2239EAD6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42A80DDE114D14948F19CDF3F72BB9A3 /* Build configuration list for PBXNativeTarget "BlockInputView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAEA1A8B3692E75D56BCD7874F0A80B2 /* Debug */,
+				A26028A32DF2C2C19BFC6CA6CA422DED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -755,6 +873,15 @@
 			buildConfigurations = (
 				B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */,
 				B0087CB4594321EF41619F3181FE120E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B43F387D261D1FAAFA2923C2C71C009 /* Build configuration list for PBXNativeTarget "BlockInputView-BlockInputView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				751DF801EBDBD8EFCEDDB0A456F5A74A /* Debug */,
+				CC07A0EEAFFF3A459FE561A4E25C1C71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

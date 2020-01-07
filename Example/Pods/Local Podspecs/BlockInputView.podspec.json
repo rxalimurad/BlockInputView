@@ -9,14 +9,20 @@
     "file": "LICENSE"
   },
   "authors": {
-    "herralimurad": "40003230+herralimurad@users.noreply.github.com"
+    "herralimurad": "herralimurad@gmail.com"
   },
   "source": {
     "git": "https://github.com/herralimurad/BlockInputView.git",
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
-  "source_files": "BlockInputView/Classes/**/*"
+  "source_files": "BlockInputView/Source/**/*",
+  "resource_bundles": {
+    "BlockInputView": [
+      "BlockInputView/Assets/**/*.{xib}"
+    ]
+  },
+  "frameworks": "UIKit"
 }

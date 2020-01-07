@@ -1,6 +1,6 @@
 //
 //  BlockInputView.swift
-//  MCPCredit
+//  BlockInputView_Example
 //
 //  Created by Ali Murad on 30/01/2019.
 //  Copyright © 2019 i2c Inc. All rights reserved.
@@ -8,8 +8,9 @@
 
 
 
+import UIKit
 
-enum ChangeStatus {
+public enum ChangeStatus {
     case insert
     case remove
     case noChange
@@ -17,19 +18,18 @@ enum ChangeStatus {
 
 
 
-protocol BlockInputViewDelegate: class {
-    func actionForInfoButton(widget: BlockInputView)
+public protocol BlockInputViewDelegate: class {
+     func actionForInfoButton(widget: BlockInputView)
 }
 
-enum TextAlignment {
+public enum TextAlignment {
     case left
     case right
     case center
 }
 
-import UIKit
 
-class BlockInputView : UIView {
+public class BlockInputView : UIView {
     
     //MARK: Outlets
     @IBOutlet private var containerView: UIView!
@@ -55,11 +55,11 @@ class BlockInputView : UIView {
     private var font : UIFont = UIFont.systemFont(ofSize: 25)
 
     //MARK:- Delegates
-    weak var delegate: BlockInputViewDelegate?
+    public var delegate: BlockInputViewDelegate?
     
     
     //MARK: Widget Property
-    var widgetAppearance = WidgetAppearance()
+    private var widgetAppearance = WidgetAppearance()
    
     //MARK: Computed Properties
     
@@ -91,9 +91,21 @@ class BlockInputView : UIView {
     
     private func nibSetup() {
         self.textField = UITextField()
+        
+        let podBundle = Bundle(for: self.classForCoder)
         let name = String(describing: type(of: self))
-        let nib = UINib(nibName: name, bundle: .main)
-        nib.instantiate(withOwner: self, options: nil)
+        if let bundleUrl = podBundle.url(forResource: name, withExtension: "bundle") {
+            if let bundle = Bundle(url: bundleUrl) {
+                let cellNib = UINib(nibName: name, bundle: bundle)
+                cellNib.instantiate(withOwner: nil, options: nil)
+            }
+        }
+        
+       
+        
+        
+        
+       
         addSubview(containerView)
         self.lblError.isHidden = true
         let padding =  10
@@ -129,13 +141,13 @@ class BlockInputView : UIView {
     
     // MARK: Widget Getter
     
-     func getFieldText()-> String {
+     public func getFieldText()-> String {
         return self.totalText.removeWhitespace()
     }
     
     // MARK: Calculate View Height
     
-    func calculateAndUpdateViewHeightBasedOnContents() {
+    private func calculateAndUpdateViewHeightBasedOnContents() {
         var height:CGFloat = 0
         height =   stackViewHeight.constant
         height =   height + errorLblTop.constant
@@ -147,7 +159,7 @@ class BlockInputView : UIView {
     
     
     // MARK: Validation
-     func validate() -> Bool {
+     public func validate() -> Bool {
         // return true
         self.endEditing(true)
         // Check Is Mandatory
@@ -175,7 +187,7 @@ class BlockInputView : UIView {
     
     //MARK: Overrides
     
-    func activate(widgetAppearance: WidgetAppearance = WidgetAppearance()) {
+    public func activate(widgetAppearance: WidgetAppearance = WidgetAppearance()) {
         self.widgetAppearance = widgetAppearance
         // Set error msg property
         lblError.textColor =    widgetAppearance.errorTextColor
@@ -196,7 +208,7 @@ class BlockInputView : UIView {
         setupView()
     }
     
-    func showError(errorMsg:String) {
+    private func showError(errorMsg:String) {
         
        self.lblError.text = errorMsg
         
@@ -229,7 +241,7 @@ class BlockInputView : UIView {
     
     
     
-     func hideErrorView() {
+     private func hideErrorView() {
         
         if !self.lblError.isHidden {
             
@@ -318,7 +330,7 @@ class BlockInputView : UIView {
     
     
   
-    func updateLinesColor() {
+    private func updateLinesColor() {
         for i in 0 ..< self.lines.count {
             let index = (self.lines.count - 1) - i
             if textFields[index].text == "" {
@@ -330,7 +342,7 @@ class BlockInputView : UIView {
         
     }
     
-    func leftShiftText(currentFieldTag : Int, cursorPosition: Int) {
+    private func leftShiftText(currentFieldTag : Int, cursorPosition: Int) {
         var nextFieldTag = 0
         var currentTag = currentFieldTag - 1
         repeat {
@@ -363,7 +375,7 @@ class BlockInputView : UIView {
         
     }
     
-    func removeAllExtraField() {
+    private func removeAllExtraField() {
         for (index , tf) in textFields.enumerated().reversed() {
             if index >= widgetAppearance.minNumberOfSections && (tf.text ?? "").isEmpty {
                 self.numberOfSections = self.numberOfSections - 1
@@ -380,7 +392,7 @@ class BlockInputView : UIView {
         }
     }
     
-    func removeExtraTextField(textField: UITextField?, completion: (() -> Void) = {}) {
+    private  func removeExtraTextField(textField: UITextField?, completion: (() -> Void) = {}) {
         if let tag = textField?.tag {
             if tag > widgetAppearance.minNumberOfSections {
                 textField?.removeFromSuperview()
@@ -399,7 +411,7 @@ class BlockInputView : UIView {
         }
     }
     
-    func rightShiftText (currentFieldTag: Int, cursorPosition: Int) {
+    private func rightShiftText (currentFieldTag: Int, cursorPosition: Int) {
         var nextFieldTag = 0
         var currentTag = currentFieldTag - 1
         // get next field for cursor setting
@@ -443,7 +455,7 @@ class BlockInputView : UIView {
     
     //MARK: Cursor Position Handler
     
-    func setCursorPosition(textFieldTag : Int, cursorPosition : Int) {
+    private func setCursorPosition(textFieldTag : Int, cursorPosition : Int) {
         if textFieldTag - 1 < textFields.count {
             let textField = self.textFields[textFieldTag - 1]
             if let newPosition = textField.position(from: textField.beginningOfDocument, offset: cursorPosition) {
@@ -452,7 +464,7 @@ class BlockInputView : UIView {
         }
     }
     
-    func getCursorPosition(textField: UITextField) -> Int? {
+    private  func getCursorPosition(textField: UITextField) -> Int? {
         if let selectedRange = textField.selectedTextRange {
             let cursorPosition = textField.offset(from: textField.beginningOfDocument, to: selectedRange.start)
             return cursorPosition
@@ -461,7 +473,7 @@ class BlockInputView : UIView {
     }
     
     //MARK: Helper Methods
-    func addTextFieldToStackView (stackView: UIStackView?, tag: Int) {
+    private  func addTextFieldToStackView (stackView: UIStackView?, tag: Int) {
         let tf = PasteDisabledTextField()
         tf.keyboardType = widgetAppearance.keyboardType
         tf.tag = tag
@@ -497,13 +509,13 @@ class BlockInputView : UIView {
         
     }
     
-    func changeTextFieldsFont (font: UIFont) {
+    private func changeTextFieldsFont (font: UIFont) {
         for tf in self.textFields {
             tf.font = font
         }
     }
     
-    func addLineToView(view : UIView,  color: UIColor, height: CGFloat) {
+    private func addLineToView(view : UIView,  color: UIColor, height: CGFloat) {
         let lineView = UIView()
         lineView.backgroundColor = color
         lineView.translatesAutoresizingMaskIntoConstraints = false // This is important!
@@ -517,7 +529,7 @@ class BlockInputView : UIView {
     }
     
     
-    func getChangeStatus() -> ChangeStatus
+    private func getChangeStatus() -> ChangeStatus
     {
         totalText = ""
         for tf in self.textFields {
@@ -537,14 +549,14 @@ class BlockInputView : UIView {
         
     }
     
-    func updateFonts() {
+    private func updateFonts() {
         for tf in self.textFields {
             tf.font = self.getFontSize(maxFont: self.font)
         }
         
     }
     
-    func getFontSize(maxFont: UIFont) -> UIFont {
+    private func getFontSize(maxFont: UIFont) -> UIFont {
         let widthToFit = (self.stackView.frame.width - (self.spacing * CGFloat(self.numberOfSections - 1))) /  CGFloat(self.numberOfSections)
         var fontSize = maxFont.pointSize
         var font = maxFont
@@ -563,7 +575,7 @@ class BlockInputView : UIView {
         return maxFont.withSize(fontSize)
     }
     
-    func getWidthOfBiggestCharacter(characters: String, font: UIFont) -> CGFloat? {
+    private func getWidthOfBiggestCharacter(characters: String, font: UIFont) -> CGFloat? {
         let allDigitsWidths  =  characters.map { (character) -> CGFloat in
             return String(repeating: character, count: widgetAppearance.sectionWidth).width(withConstrainedHeight: self.stackView.frame.height, font: font)
         }
@@ -571,14 +583,9 @@ class BlockInputView : UIView {
         
     }
     
-    func clearText() {
-        for field in textFields {
-            field.text = ""
-            field.resignFirstResponder()
-        }
-    }
+   
     
-    func updateHeight(height:CGFloat) {
+    private func updateHeight(height:CGFloat) {
         let viewHeight = height
         
         if self.getConstraint(attribute: .height) != nil {
@@ -588,7 +595,7 @@ class BlockInputView : UIView {
         }
     }
     
-    func resetInput() {
+    public func resetInput() {
         totalText = ""
         self.textField.text = ""
         for textField in textFields {
