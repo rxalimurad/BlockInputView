@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'BlockInputView_Example' do
+  pod 'BlockInputView', :path => '../'
+
+  target 'BlockInputView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
