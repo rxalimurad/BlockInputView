@@ -1,0 +1,6 @@
+framework module BlockInputView {
+  umbrella header "BlockInputView-umbrella.h"
+
+  export *
+  module * { export * }
+}

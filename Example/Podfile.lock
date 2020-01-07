@@ -1,0 +1,16 @@
+PODS:
+  - BlockInputView (0.1.0)
+
+DEPENDENCIES:
+  - BlockInputView (from `../`)
+
+EXTERNAL SOURCES:
+  BlockInputView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BlockInputView: a4979bc2c28a608f9ab107247d6553b621fb9796
+
+PODFILE CHECKSUM: 576976bec71700f32d9c1a71b94f4daa2710f25b
+
+COCOAPODS: 1.8.4

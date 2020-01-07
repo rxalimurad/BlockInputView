@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BlockInputView">
+            <connections>
+                <outlet property="containerView" destination="iN0-l3-epB" id="yQR-pm-QZy"/>
+                <outlet property="errorLblTop" destination="gsu-oa-9g9" id="7My-Rx-VDk"/>
+                <outlet property="lblError" destination="r6s-hN-ZOM" id="LM8-97-SV6"/>
+                <outlet property="lblErrorHeightConstraint" destination="hxb-fh-9b9" id="64z-g7-RYJ"/>
+                <outlet property="stackView" destination="GCs-DJ-udW" id="30a-lg-bxe"/>
+                <outlet property="stackViewHeight" destination="ayn-qe-NSo" id="wdF-N3-npa"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="336" height="48"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="GCs-DJ-udW">
+                    <rect key="frame" x="0.0" y="0.0" width="336" height="33"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="33" id="ayn-qe-NSo"/>
+                    </constraints>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r6s-hN-ZOM">
+                    <rect key="frame" x="0.0" y="48" width="336" height="0.0"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="hxb-fh-9b9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="GCs-DJ-udW" secondAttribute="trailing" id="9JB-tU-oRc"/>
+                <constraint firstItem="r6s-hN-ZOM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Ebq-zA-6gR"/>
+                <constraint firstItem="GCs-DJ-udW" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="TCs-6I-xc8"/>
+                <constraint firstItem="GCs-DJ-udW" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="WOB-8j-rGY"/>
+                <constraint firstItem="GCs-DJ-udW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bd2-uZ-T6Z"/>
+                <constraint firstItem="r6s-hN-ZOM" firstAttribute="top" secondItem="GCs-DJ-udW" secondAttribute="bottom" constant="15" id="gsu-oa-9g9"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="r6s-hN-ZOM" secondAttribute="bottom" id="jrD-BK-hIl"/>
+                <constraint firstAttribute="trailing" secondItem="r6s-hN-ZOM" secondAttribute="trailing" id="la4-0J-pUt"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="4.7999999999999998" y="120.53973013493254"/>
+        </view>
+    </objects>
+</document>

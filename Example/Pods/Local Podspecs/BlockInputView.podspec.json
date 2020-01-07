@@ -1,0 +1,22 @@
+{
+  "name": "BlockInputView",
+  "version": "0.1.0",
+  "summary": "A short description of BlockInputView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/herralimurad/BlockInputView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "herralimurad": "40003230+herralimurad@users.noreply.github.com"
+  },
+  "source": {
+    "git": "https://github.com/herralimurad/BlockInputView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "BlockInputView/Classes/**/*"
+}

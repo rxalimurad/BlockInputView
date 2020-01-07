@@ -1,0 +1,6 @@
+framework module Pods_BlockInputView_Example {
+  umbrella header "Pods-BlockInputView_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
