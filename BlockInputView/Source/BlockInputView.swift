@@ -16,8 +16,6 @@ public enum ChangeStatus {
     case noChange
 }
 
-
-
 public protocol BlockInputViewDelegate: class {
      func actionForInfoButton(widget: BlockInputView)
 }
@@ -27,7 +25,6 @@ public enum TextAlignment {
     case right
     case center
 }
-
 
 public class BlockInputView : UIView {
     
@@ -39,9 +36,6 @@ public class BlockInputView : UIView {
     @IBOutlet private var stackViewHeight: NSLayoutConstraint!
     @IBOutlet private var errorLblTop: NSLayoutConstraint!
   
-    
-    
-    
     //MARK: Class Property
     private var textFields = [UITextField]()
     private var lines = [UIView]()
@@ -57,12 +51,10 @@ public class BlockInputView : UIView {
     //MARK:- Delegates
     public var delegate: BlockInputViewDelegate?
     
-    
     //MARK: Widget Property
     private var widgetAppearance = WidgetAppearance()
    
     //MARK: Computed Properties
-    
     var parentTopView: UIView? {
         var parentResponder: UIResponder? = self
         while parentResponder != nil {
@@ -73,9 +65,6 @@ public class BlockInputView : UIView {
         }
         return nil
     }
-    
-    
-    
     
     //MARK: Initializers
     override init(frame: CGRect) {
@@ -88,7 +77,6 @@ public class BlockInputView : UIView {
         nibSetup()
     }
     
-    
     private func nibSetup() {
         self.textField = UITextField()
         
@@ -97,16 +85,11 @@ public class BlockInputView : UIView {
         if let bundleUrl = podBundle.url(forResource: name, withExtension: "bundle") {
             if let bundle = Bundle(url: bundleUrl) {
                 let cellNib = UINib(nibName: name, bundle: bundle)
-                cellNib.instantiate(withOwner: nil, options: nil)
+                cellNib.instantiate(withOwner: self, options: nil)
             }
         }
         
-       
-        
-        
-        
-       
-        addSubview(containerView)
+       addSubview(containerView)
         self.lblError.isHidden = true
         let padding =  10
         NSLayoutConstraint.activate([
@@ -140,8 +123,7 @@ public class BlockInputView : UIView {
     }
     
     // MARK: Widget Getter
-    
-     public func getFieldText()-> String {
+    public func getFieldText()-> String {
         return self.totalText.removeWhitespace()
     }
     
@@ -285,6 +267,7 @@ public class BlockInputView : UIView {
                     }
                     _ = self.getChangeStatus()
                     self.setCursorPosition(textFieldTag: textField.tag, cursorPosition: cursorPosition - 1)
+                    self.endEditing(true)
                     return
                 }
                 if cursorPosition > widgetAppearance.sectionWidth {
@@ -491,8 +474,8 @@ public class BlockInputView : UIView {
         let attrStr = NSMutableAttributedString(string:  hint)
         attrStr.addAttribute(NSAttributedString.Key.foregroundColor, value: widgetAppearance.hintColor, range:  NSRange(location: 0, length: hint.count))
         tf.attributedPlaceholder = attrStr
-
-
+        tf.returnKeyType = .done
+        tf.delegate = self
 
 
 
@@ -605,20 +588,14 @@ public class BlockInputView : UIView {
         updateLinesColor()
     }
     
-    
-    //MARK:- Actions
-    
-    @IBAction func actionForHelpButton(_ sender: UIButton) {
-        delegate?.actionForInfoButton(widget: self)
-    }
-    
-    //MARK: Overrided method for server request param value
-     func selectedValueForServer() -> String? {
-        return !self.getFieldText().isEmpty ? self.getFieldText() : nil
-    }
 }
 
-
+extension BlockInputView: UITextFieldDelegate {
+    public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+}
 
 
 extension String {
@@ -697,9 +674,6 @@ extension String {
 
 
 class PasteDisabledTextField: UITextField {
-    
-    
-    
     override var isSecureTextEntry: Bool {
         didSet {
             if isFirstResponder {
@@ -707,7 +681,6 @@ class PasteDisabledTextField: UITextField {
             }
         }
     }
-    
     override func becomeFirstResponder() -> Bool {
         
         let success = super.becomeFirstResponder()

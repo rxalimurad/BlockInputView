@@ -27,6 +27,7 @@ class ViewController: UIViewController {
         widgetProperPIN.sectionWidth = 1
         widgetProperPIN.emptyMessage = "Please enter valid pin"
         widgetProperPIN.errorMessage = "Invalid pin"
+        widgetProperPIN.isSecureTextEntry = true
         widgetProperPIN.minLength = 1
         widgetProperPIN.maxLength = 4
         widgetProperPIN.hintText = "0"
@@ -60,10 +61,13 @@ class ViewController: UIViewController {
         macAddressInput.activate(widgetAppearance: widgetProperMAC)
     }
     @IBAction func actForNext(_ sender: UIButton) {
-        if cardNumberInput.validate() {
+        if cardNumberInput.validate() && pinInput.validate() && otpInput.validate() && macAddressInput.validate() {
             let storyBoard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyBoard.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
-            vc.number = cardNumberInput.getFieldText()
+            vc.cardNo = cardNumberInput.getFieldText()
+            vc.mac = macAddressInput.getFieldText()
+            vc.pin = pinInput.getFieldText()
+            vc.otp = otpInput.getFieldText()
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }

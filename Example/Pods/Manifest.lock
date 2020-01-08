@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  BlockInputView: eed9004b4abd61cf40b309a8f9df4b035fa6a61b
+  BlockInputView: d4f3ddb30827988cd719ee06b9d4667e203cd08d
 
 PODFILE CHECKSUM: 576976bec71700f32d9c1a71b94f4daa2710f25b
 

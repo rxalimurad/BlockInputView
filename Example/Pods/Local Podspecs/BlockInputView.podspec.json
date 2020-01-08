@@ -21,7 +21,7 @@
   "source_files": "BlockInputView/Source/**/*",
   "resource_bundles": {
     "BlockInputView": [
-      "BlockInputView/Assets/**/*.{xib}"
+      "BlockInputView/Assets/*.xib"
     ]
   },
   "frameworks": "UIKit"

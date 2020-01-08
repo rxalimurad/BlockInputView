@@ -22,7 +22,7 @@ pod 'BlockInputView'
 
 ## Author
 
-herralimurad, 40003230+herralimurad@users.noreply.github.com
+herralimurad, herralimurad@gmail.com
 
 ## License
 

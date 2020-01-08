@@ -10,11 +10,19 @@ import UIKit
 class SecondViewController: UIViewController {
     
     @IBOutlet weak var lbl: UILabel!
-    var number: String = ""
+    var cardNo: String = ""
+    var pin: String = ""
+    var otp: String = ""
+    var mac: String = ""
+
+
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.lbl.text = "Value is " + number
+        self.lbl.text = "Card No :: " + cardNo + "\n" + "PIN :: " + pin + "\n" +
+            "OT Password :: " + otp + "\n" + "MAC Addres :: " + mac + "\n"
+        lbl.textAlignment = .left
         // Do any additional setup after loading the view.
     }
     

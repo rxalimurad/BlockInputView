@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18B3E76623C65B63006DB15F /* OCRAExtended.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18B3E76523C65A74006DB15F /* OCRAExtended.ttf */; };
 		18BC5F2723C50E2C0044989F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC5F2623C50E2C0044989F /* SecondViewController.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18B3E76523C65A74006DB15F /* OCRAExtended.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = OCRAExtended.ttf; sourceTree = "<group>"; };
 		18BC5F2623C50E2C0044989F /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		217EFCDFC3144531DD3AF187 /* Pods-BlockInputView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlockInputView_Example.release.xcconfig"; path = "Target Support Files/Pods-BlockInputView_Example/Pods-BlockInputView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		2E52554EAC2825FADC821121 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -116,12 +118,13 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				18B3E76523C65A74006DB15F /* OCRAExtended.ttf */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
+				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				18BC5F2623C50E2C0044989F /* SecondViewController.swift */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
-				18BC5F2623C50E2C0044989F /* SecondViewController.swift */,
 			);
 			name = "Example for BlockInputView";
 			path = BlockInputView;
@@ -173,7 +176,7 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				3E270CF7DA8424A50D474B3C /* [CP] Embed Pods Frameworks */,
+				8608557840B595465A0E5FC5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -250,6 +253,7 @@
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				18B3E76623C65B63006DB15F /* OCRAExtended.ttf in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,7 +290,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3E270CF7DA8424A50D474B3C /* [CP] Embed Pods Frameworks */ = {
+		8608557840B595465A0E5FC5 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
