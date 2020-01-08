@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+'Main reason to write BlockInputView is i want view like this in my application and I was unable to find any cocoapod about it, so write it and made it public so other can use it'
                        DESC
 
   s.homepage         = 'https://github.com/herralimurad/BlockInputView'
@@ -26,6 +26,7 @@ TODO: Add long description of the pod here.
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'herralimurad' => 'herralimurad@gmail.com' }
   s.source           = { :git => 'https://github.com/herralimurad/BlockInputView.git', :tag => s.version.to_s }
+  s.swift_version = '5.0'
 
   s.ios.deployment_target = '9.0'
   s.source_files = 'BlockInputView/Source/**/*'
